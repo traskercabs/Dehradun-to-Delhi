@@ -1,6 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <script>
+window.addEventListener('load', function () {
+  setTimeout(function () {
+
+    const s = document.createElement('script');
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=G-3VRC9T7P8Z';
+    s.async = true;
+    document.head.appendChild(s);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    window.gtag = gtag;
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-3VRC9T7P8Z', {
+      send_page_view: true,
+      transport_type: 'beacon'
+    });
+
+  }, 3000); // Load Analytics 3 seconds after page load
+});
+</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">  
   <title>Dehradun to Delhi Cab Booking | Direct Airport Drops - Trasker Cabs</title>
@@ -1200,9 +1223,9 @@
       <div class="footer-col">
         <h4>Popular Corridors</h4>
         <a href="https://traskercabs.github.io/Delhi-Dehradun/">Delhi to Dehradun Cab</a>
-        <a href="dehradun-to-delhi.html">Dehradun to Delhi Cab</a>
-        <a href="dehradun-to-mussoorie.html">Dehradun to Mussoorie</a>
-        <a href="dehradun-to-noida.html">Dehradun to Noida Cab</a>
+        <a href="https://traskercabs.github.io/Delhi-Mussoorie/">Delhi to Mussoorie Cab</a>
+        <a href="https://traskercabs.github.io/Trasker-Cabs/">Dehradun to Mussoorie</a>
+        <a href="https://traskercabs.github.io/Dehradun-To-Chandigarh/">Dehradun to Chandigarh Cab</a>
       </div>
       <div class="footer-col">
         <h4>Support Helpdesk</h4>
