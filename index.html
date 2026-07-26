@@ -65,6 +65,7 @@ window.addEventListener('load', function () {
       --radius-sm: 8px;
       --radius-md: 14px;
       --radius-lg: 20px;
+      
     }
 
     *, *::before, *::after {
@@ -250,9 +251,10 @@ window.addEventListener('load', function () {
     
 
    .smart-img {
-    display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+    object-position: 35% 60%;
 }
 
     .image-slot-badge {
@@ -306,6 +308,8 @@ window.addEventListener('load', function () {
       box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
       transition: border-color 0.2s, transform 0.2s;
     }
+
+    
 
     .widget:hover { 
       border-color: var(--gold);
